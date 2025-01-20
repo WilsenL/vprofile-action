@@ -41,7 +41,7 @@ jobs:
 
       - name: Sonarqube Quality Gate
         id: sonarqube-quality-gate
-        uses: SonarSource/sonarcloud-github-action@v1.4
+        uses: sonarsource/sonarqube-github-action@master
         timeout-minutes: 5
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
